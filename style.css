@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: rgba(15,23,42,0.9);
+  position: sticky;
+  top: 0;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #38bdf8, #a78bfa);
+  color: black;
+}
+
+/* SECTION */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* GLASS CARD */
+.card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  margin: 15px;
+  border-radius: 15px;
+  display: inline-block;
+  width: 260px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* PROFILE IMAGE (CIRCULAR) */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #38bdf8;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* FLEX */
+.flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* FOOTER */
+footer {
+  background: black;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ANIMATION BASE */
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* HERO TEXT ANIMATION */
+.hero h1 {
+  animation: fadeInDown 1s ease;
+}
+
+.hero p {
+  animation: fadeInUp 1.2s ease;
+}
+
+/* KEYFRAMES */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* CARD HOVER GLOW */
+.card:hover {
+  box-shadow: 0 0 25px rgba(167, 139, 250, 0.6);
+}
